@@ -47,6 +47,7 @@
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body class="bg-dark text-light font-inter min-h-screen">
   <!-- 导航栏 -->
   <nav class="sticky top-0 z-50 bg-dark/80 backdrop-blur-md border-b border-gray-800">
@@ -65,6 +66,7 @@
           <a href="#about" class="text-gray-300 hover:text-primary transition-colors">关于我</a>
           <a href="#skills" class="text-gray-300 hover:text-primary transition-colors">技能</a>
           <a href="#project" class="text-gray-300 hover:text-primary transition-colors">作品集</a>
+          <a href="#education" class="text-gray-300 hover:text-primary transition-colors">教育经历</a>
           <a href="#contact" class="text-gray-300 hover:text-primary transition-colors">联系方式</a>
         </div>
       </div>
@@ -78,8 +80,7 @@
       <div class="flex flex-col md:flex-row items-center gap-8">
         <div
           class="w-48 h-48 md:w-64 md:h-64 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center overflow-hidden">
-          <img src="images/mypicture.png" alt="个人照片"
-            class="w-full h-full object-cover mix-blend-lighten">
+          <img src="images/mypicture.png" alt="个人照片" class="w-full h-full object-cover mix-blend-lighten">
         </div>
         <div class="text-center md:text-left">
           <h1
@@ -306,7 +307,7 @@
     </section>
 
     <!-- 作品集 -->
-    <section id="project" class="mb-20">
+    <section id="projects" class="mb-20">
       <h2 class="text-2xl font-bold mb-8 bg-gradient-to-r from-primary to-secondary text-gradient inline-block">作品集</h2>
 
       <!-- Unity项目 -->
@@ -314,142 +315,143 @@
         <h3 class="text-xl font-semibold mb-6 text-primary flex items-center">
           <i class="fa fa-gamepad mr-2"></i> Unity项目
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 项目1 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1015/600/400" alt="冒险解谜游戏"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《迷失森林》冒险解谜游戏</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                一款第一人称冒险解谜游戏，玩家需要探索神秘森林，解开古老文明的秘密。游戏包含物理谜题、环境互动和非线性叙事。
-              </p>
-              <a href="project-detail.html?project=unity-1"
-                class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
+
+        <div class="relative">
+          <!-- 横向滚动容器 -->
+          <div class="overflow-x-auto pb-4 scrollbar-hide">
+            <div class="flex space-x-6 min-w-max">
+              <!-- 项目1 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1015/600/400" alt="冒险解谜游戏"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《迷失森林》冒险解谜游戏</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    一款第一人称冒险解谜游戏，玩家需要探索神秘森林，解开古老文明的秘密。
+                  </p>
+                  <a href="project-detail.html?project=unity-1"
+                    class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目2 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1016/600/400" alt="VR太空体验"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《星际漫游》VR太空体验</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    一款虚拟现实太空探索体验，支持Oculus Quest和HTC Vive设备。
+                  </p>
+                  <a href="project-detail.html?project=unity-2"
+                    class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目3 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1018/600/400" alt="2D平台跳跃游戏"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《光影之间》2D平台跳跃游戏</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    一款以光影变换为核心机制的2D平台跳跃游戏。
+                  </p>
+                  <a href="project-detail.html?project=unity-3"
+                    class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目4 (新增) -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1019/600/400" alt="AR教育应用"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《探索者》AR教育应用</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    一款基于增强现实技术的教育应用，让学习变得更加互动和有趣。
+                  </p>
+                  <a href="project-detail.html?project=unity-4"
+                    class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- 项目2 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1016/600/400" alt="VR太空体验"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《星际漫游》VR太空体验</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                一款虚拟现实太空探索体验，支持Oculus Quest和HTC Vive设备。玩家可以体验失重环境、太空行走和行星探索。
-              </p>
-              <a href="project-detail.html?project=unity-2"
-                class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 项目3 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1018/600/400" alt="2D平台跳跃游戏"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《光影之间》2D平台跳跃游戏</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                一款以光影变换为核心机制的2D平台跳跃游戏，玩家需要在光明与黑暗之间切换来解决谜题和克服障碍。
-              </p>
-              <a href="project-detail.html?project=unity-3"
-                class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
+          <!-- 滚动提示 -->
+          <div
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-dark/80 p-2 rounded-full text-gray-400 hidden md:block">
+            <i class="fa fa-angle-right"></i>
           </div>
         </div>
       </div>
-
-      <!-- 项目4 -->
-      <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-        <div class="h-48 overflow-hidden">
-          <img src="https://picsum.photos/id/1018/600/400" alt="2D平台跳跃游戏"
-            class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-        </div>
-        <div class="p-5">
-          <h4 class="text-lg font-semibold mb-2">《光影之间》2D平台跳跃游戏</h4>
-          <p class="text-gray-400 text-sm mb-4">
-            一款以光影变换为核心机制的2D平台跳跃游戏，玩家需要在光明与黑暗之间切换来解决谜题和克服障碍。
-          </p>
-          <a href="project-detail.html?project=unity-3"
-            class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
-            查看详情 <i class="fa fa-arrow-right ml-1"></i>
-          </a>
-        </div>
-      </div>
-      </div>
-      </div>
-
 
       <!-- Unreal Engine项目 -->
       <div class="mb-12">
         <h3 class="text-xl font-semibold mb-6 text-secondary flex items-center">
           <i class="fa fa-rocket mr-2"></i> Unreal Engine项目
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 项目1 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1019/600/400" alt="开放世界RPG"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《龙与魔法》开放世界RPG</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                一款基于虚幻引擎5的开放世界角色扮演游戏，具有动态天气系统、昼夜循环和复杂的NPC互动系统。
-              </p>
-              <a href="project-detail.html?project=ue-1"
-                class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
+
+        <div class="relative">
+          <div class="overflow-x-auto pb-4 scrollbar-hide">
+            <div class="flex space-x-6 min-w-max">
+              <!-- 项目1 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1019/600/400" alt="开放世界RPG"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《龙与魔法》开放世界RPG</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    一款基于虚幻引擎5的开放世界角色扮演游戏。
+                  </p>
+                  <a href="project-detail.html?project=ue-1"
+                    class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目2 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1039/600/400" alt="赛车游戏"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《极速狂飙》赛车游戏</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    一款高速赛车游戏，具有真实的物理模拟和动态赛道变化。
+                  </p>
+                  <a href="project-detail.html?project=ue-2"
+                    class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- 项目2 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1039/600/400" alt="赛车游戏"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《极速狂飙》赛车游戏</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                一款高速赛车游戏，具有真实的物理模拟和动态赛道变化。游戏支持多人在线对战和自定义车辆。
-              </p>
-              <a href="project-detail.html?project=ue-2"
-                class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 项目3 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1035/600/400" alt="恐怖游戏"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《寂静疗养院》恐怖游戏</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                一款心理恐怖游戏，玩家需要探索废弃疗养院的秘密。游戏采用沉浸式音效设计和动态恐怖事件系统。
-              </p>
-              <a href="project-detail.html?project=ue-3"
-                class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
+          <div
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-dark/80 p-2 rounded-full text-gray-400 hidden md:block">
+            <i class="fa fa-angle-right"></i>
           </div>
         </div>
       </div>
@@ -459,59 +461,69 @@
         <h3 class="text-xl font-semibold mb-6 text-accent flex items-center">
           <i class="fa fa-picture-o mr-2"></i> 平面设计项目
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 项目1 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1040/600/400" alt="音乐节海报"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《未来之声》音乐节海报设计</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                为校园音乐节设计的系列海报，采用未来主义风格，结合霓虹色彩和几何元素，传达音乐与科技的融合。
-              </p>
-              <a href="project-detail.html?project=graphic-1"
-                class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
+
+        <div class="relative">
+          <div class="overflow-x-auto pb-4 scrollbar-hide">
+            <div class="flex space-x-6 min-w-max">
+              <!-- 项目1 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1040/600/400" alt="音乐节海报"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《未来之声》音乐节海报设计</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    为校园音乐节设计的系列海报，采用未来主义风格，结合霓虹色彩和几何元素。
+                  </p>
+                  <a href="project-detail.html?project=graphic-1"
+                    class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目2 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1042/600/400" alt="品牌VI设计"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《绿意生活》环保品牌VI设计</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    为环保组织设计的品牌视觉识别系统，包括标志、色彩系统、字体规范和应用场景。
+                  </p>
+                  <a href="project-detail.html?project=graphic-2"
+                    class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目3 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1043/600/400" alt="书籍封面设计"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《数字时代》书籍封面设计</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    为科技类书籍设计的封面，采用简约现代风格，结合抽象几何图形和渐变色彩。
+                  </p>
+                  <a href="project-detail.html?project=graphic-3"
+                    class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- 项目2 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1042/600/400" alt="品牌VI设计"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《绿意生活》环保品牌VI设计</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                为环保组织设计的品牌视觉识别系统，包括标志、色彩系统、字体规范和应用场景，强调自然与可持续发展。
-              </p>
-              <a href="project-detail.html?project=graphic-2"
-                class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 项目3 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1043/600/400" alt="书籍封面设计"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《数字时代》书籍封面设计</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                为科技类书籍设计的封面，采用简约现代风格，结合抽象几何图形和渐变色彩，展现数字化时代的特征。
-              </p>
-              <a href="project-detail.html?project=graphic-3"
-                class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
+          <div
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-dark/80 p-2 rounded-full text-gray-400 hidden md:block">
+            <i class="fa fa-angle-right"></i>
           </div>
         </div>
       </div>
@@ -521,59 +533,51 @@
         <h3 class="text-xl font-semibold mb-6 text-primary flex items-center">
           <i class="fa fa-video-camera mr-2"></i> 视频剪辑项目
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 项目1 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1050/600/400" alt="旅行纪录片"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《在路上》旅行纪录片</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                记录西南地区骑行之旅的纪录片，采用电影级调色和多机位剪辑，结合环境音和配乐营造沉浸式体验。
-              </p>
-              <a href="project-detail.html?project=video-1"
-                class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
+
+        <div class="relative">
+          <div class="overflow-x-auto pb-4 scrollbar-hide">
+            <div class="flex space-x-6 min-w-max">
+              <!-- 项目1 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1050/600/400" alt="旅行纪录片"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《在路上》旅行纪录片</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    记录西南地区骑行之旅的纪录片，采用电影级调色和多机位剪辑。
+                  </p>
+                  <a href="project-detail.html?project=video-1"
+                    class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目2 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1052/600/400" alt="产品宣传片"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《未来科技》产品宣传片</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    为智能手表产品制作的宣传片，结合3D动画和实景拍摄。
+                  </p>
+                  <a href="project-detail.html?project=video-2"
+                    class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- 项目2 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1052/600/400" alt="产品宣传片"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《未来科技》产品宣传片</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                为智能手表产品制作的宣传片，结合3D动画和实景拍摄，展现产品的设计美学和功能特性。
-              </p>
-              <a href="project-detail.html?project=video-2"
-                class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 项目3 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1053/600/400" alt="校园活动集锦"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《青春记忆》校园活动集锦</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                记录大学生活重要时刻的视频集锦，采用快节奏剪辑和情感化叙事，配合音乐节奏营造青春活力氛围。
-              </p>
-              <a href="project-detail.html?project=video-3"
-                class="text-primary hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
+          <div
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-dark/80 p-2 rounded-full text-gray-400 hidden md:block">
+            <i class="fa fa-angle-right"></i>
           </div>
         </div>
       </div>
@@ -583,59 +587,69 @@
         <h3 class="text-xl font-semibold mb-6 text-secondary flex items-center">
           <i class="fa fa-film mr-2"></i> 3D动画项目
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 项目1 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1060/600/400" alt="角色动画"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《机器人冒险》角色动画短片</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                讲述一个小机器人寻找自我的动画短片，使用Blender制作，包含角色绑定、表情动画和环境特效。
-              </p>
-              <a href="project-detail.html?project=3d-1"
-                class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
+
+        <div class="relative">
+          <div class="overflow-x-auto pb-4 scrollbar-hide">
+            <div class="flex space-x-6 min-w-max">
+              <!-- 项目1 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1060/600/400" alt="角色动画"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《机器人冒险》角色动画短片</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    讲述一个小机器人寻找自我的动画短片，使用Blender制作。
+                  </p>
+                  <a href="project-detail.html?project=3d-1"
+                    class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目2 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1061/600/400" alt="产品可视化"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《智能家居》产品可视化</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    为智能家居系统制作的3D可视化动画，展示产品的外观设计和工作原理。
+                  </p>
+                  <a href="project-detail.html?project=3d-2"
+                    class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目3 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1062/600/400" alt="环境特效"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《奇幻森林》环境特效短片</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    展现神秘森林中魔法生物的3D短片，重点展示粒子特效和动态光照效果。
+                  </p>
+                  <a href="project-detail.html?project=3d-3"
+                    class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- 项目2 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1061/600/400" alt="产品可视化"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《智能家居》产品可视化</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                为智能家居系统制作的3D可视化动画，展示产品的外观设计和工作原理，采用写实风格渲染。
-              </p>
-              <a href="project-detail.html?project=3d-2"
-                class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 项目3 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1062/600/400" alt="环境特效"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《奇幻森林》环境特效短片</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                展现神秘森林中魔法生物的3D短片，重点展示粒子特效、程序化生成和动态光照效果。
-              </p>
-              <a href="project-detail.html?project=3d-3"
-                class="text-secondary hover:text-primary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
+          <div
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-dark/80 p-2 rounded-full text-gray-400 hidden md:block">
+            <i class="fa fa-angle-right"></i>
           </div>
         </div>
       </div>
@@ -645,59 +659,51 @@
         <h3 class="text-xl font-semibold mb-6 text-accent flex items-center">
           <i class="fa fa-magic mr-2"></i> AIGC项目
         </h3>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <!-- 项目1 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1070/600/400" alt="AI艺术作品"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《梦境世界》AI艺术作品集</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                使用Midjourney和Stable Diffusion创作的超现实艺术作品系列，探索梦境与现实的边界。
-              </p>
-              <a href="project-detail.html?project=aigc-1"
-                class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
+
+        <div class="relative">
+          <div class="overflow-x-auto pb-4 scrollbar-hide">
+            <div class="flex space-x-6 min-w-max">
+              <!-- 项目1 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1070/600/400" alt="AI艺术作品"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《梦境世界》AI艺术作品集</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    使用Midjourney和Stable Diffusion创作的超现实艺术作品系列。
+                  </p>
+                  <a href="project-detail.html?project=aigc-1"
+                    class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- 项目2 -->
+              <div class="w-72 bg-gray-800/50 rounded-xl overflow-hidden card-hover">
+                <div class="h-48 overflow-hidden">
+                  <img src="https://picsum.photos/id/1071/600/400" alt="AI辅助设计"
+                    class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
+                </div>
+                <div class="p-5">
+                  <h4 class="text-lg font-semibold mb-2">《未来城市》AI辅助概念设计</h4>
+                  <p class="text-gray-400 text-sm mb-4">
+                    结合AI工具进行未来城市概念设计，通过ChatGPT生成创意，Midjourney生成图像。
+                  </p>
+                  <a href="project-detail.html?project=aigc-2"
+                    class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
+                    查看详情 <i class="fa fa-arrow-right ml-1"></i>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- 项目2 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1071/600/400" alt="AI辅助设计"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《未来城市》AI辅助概念设计</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                结合AI工具进行未来城市概念设计，通过ChatGPT生成创意，Midjourney生成图像，最终进行后期处理。
-              </p>
-              <a href="project-detail.html?project=aigc-2"
-                class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- 项目3 -->
-          <div class="bg-gray-800/50 rounded-xl overflow-hidden card-hover">
-            <div class="h-48 overflow-hidden">
-              <img src="https://picsum.photos/id/1072/600/400" alt="AI动画生成"
-                class="w-full h-full object-cover transition-transform hover:scale-110 duration-500">
-            </div>
-            <div class="p-5">
-              <h4 class="text-lg font-semibold mb-2">《数字生命》AI动画生成项目</h4>
-              <p class="text-gray-400 text-sm mb-4">
-                使用Runway ML和Pika等AI工具生成的抽象动画短片，探索数字生命的进化与变化。
-              </p>
-              <a href="project-detail.html?project=aigc-3"
-                class="text-accent hover:text-secondary transition-colors text-sm font-medium flex items-center">
-                查看详情 <i class="fa fa-arrow-right ml-1"></i>
-              </a>
-            </div>
+          <div
+            class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-dark/80 p-2 rounded-full text-gray-400 hidden md:block">
+            <i class="fa fa-angle-right"></i>
           </div>
         </div>
       </div>
@@ -800,16 +806,13 @@
           </h3>
 
           <div class="bg-gray-700/50 rounded-lg p-4">
-            <div class="flex items-start">
+            <div class="flex items-center">
               <div class="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                 <i class="fa fa-star text-accent"></i>
               </div>
               <div>
                 <h4 class="text-lg font-medium text-gray-300 mb-1">全国三维数字化创新设计大赛17周年精英联赛 · 一等奖</h4>
               </div>
-              <p class="text-gray-400 text-sm">
-                熟练掌握和运用推文制作排版工具，具有良好的沟通能力和组织协调能力。<!-- 需要修改 -->
-              </p>
             </div>
           </div>
         </div>
